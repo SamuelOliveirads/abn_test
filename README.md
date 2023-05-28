@@ -1,78 +1,99 @@
 # abn_project
 
-## A short description of the project
+## A/B/n Test at the University of Montana
 
-#### This project was made by Samuel Oliveira.
+#### This project was conducted by Samuel Oliveira.
 
 # 1. Business Problem.
-A universidade de Montana, nos Estados Unidos, possui vários serviços de apoio ao aluno, incluindo uma biblioteca.
 
-A biblioteca da universidade oferece vários serviços para os estudantes, como alocação de salas de estudos, livros, computadores, discussões em grupo, webnários e etc. Todos esses serviços e vários outros, ficam disponíveis dentro da página web da própria biblioteca e os alunos podem acessá-la para agendar algum dos serviços disponíveis.
+The University of Montana in the United States offers various student support services, including a library that provides several services such as study room allocation, books, computers, group discussions, webinars, among others, through its web page.
 
-A página possui um banner da universidade, uma barra de busca, três principais categorias do acesso e uma barra lateral direita que exibi as últimas notícias.
+From April 3 to April 10, 2013, the library's homepage received 10,819 visitors. The analysis of the page access data showed a large discrepancy in accesses to the different service categories. 
 
-Durante o período de 3 de Abril de 2013 até 10 de Abril de 2013, a página "home" da biblioteca recebeu 10.819 visitantes. Ao analisar os dados de acesso da página, o time de TI da universidade percebeu uma grande diferença entre os acessos das categorias das páginas. A taxa de click da "Find" foi de 35%, "Request" foi de 6% e "Interact" foi de 2%.
+The IT team at the university questioned why the click-through rate on the "Interact" category was very low, just 2%. The hypothesis raised was that the name "Interact" was confusing students. Therefore, four new names were proposed: "Connect", "Learn", "Help", and "Services".
 
-Olhando as taxas de clicks, o time de TI se perguntou o motivo da conversão da categoria "interact" estar tão baixa.
+An A/B/n test was conducted from May 29 to June 18, 2013 to validate which of the variations would be more understandable and attractive to students, with the expectation of increasing the click-through rate in this category.
 
-Uma das hipóteses do time de TI foi que o nome "Interact" está confundindo os alunos, pois não deixa claro o propósito daquela categoria. Assim, quatro novos nomes foram propostos para substituir o nome atual da categoria: "Connect", "Lean", "Help" e "Service".
+# 2. Business Hypotheses.
 
-Com as variações do nome da categoria, um test A/B/n precisa ser definido para validar qual das variações deixa a categoria mais compreensível e atraente para os estudantes, com a expectativa de aumentar a taxa de clicks nessa categoria.
+The initial hypothesis is that changing the name "Interact" to "Connect", "Learn", "Help" or "Services" will increase the click-through rate in the respective category.
 
-Assim, um test A/B/n foi realizado durante 3 semanas, entre os dias 29 de Maio de 2013 e 18 de Junho de 2013. O experimento foi desenhado para garantir que um usuário acessasse qualquer uma das variações com a mesma probabilidade.
+# 3. Solution Strategy.
 
-# 2. Business Assumptions.
-
-# 3. Solution Strategy
-
-My strategy to solve this challenge was:
+The strategy to resolve this challenge was:
 
 **Step 01. Data Description:**
 
+The data collected from the website was analyzed. The main components analyzed were the different variants of the "Interact" category and the click-through rate on each one.
+
 **Step 02. Feature Engineering:**
+
+The dataset was manipulated to calculate conversion rates for each variant.
 
 **Step 03. Data Filtering:**
 
+Data was filtered to ensure uniqueness of users in each variant, preventing contamination of results.
+
 **Step 04. Exploratory Data Analysis:**
+
+Analysis of the different groups was carried out, and the conversion rate was calculated for each group.
 
 **Step 05. Data Preparation:**
 
+Data was prepared for the application of the hypothesis test.
+
 **Step 06. Feature Selection:**
 
-**Step 07. Machine Learning Modelling:**
+The features relevant to the hypothesis test were selected.
 
-**Step 08. Hyperparameter Fine Tunning:**
+**Step 07. Statistical Hypothesis Test:**
 
-**Step 09. Convert Model Performance to Business Values:**
+A hypothesis test was carried out to determine whether the conversion rate for each variant of the new page was significantly different from the current one.
 
-**Step 10. Deploy Modelo to Production:**
+**Step 08. Interpretation of Results:**
 
-# 4. Top 3 Data Insights
+The results of the hypothesis test were interpreted and the decision was made to accept or reject the null hypothesis.
+
+# 4. Statistical Hypothesis Test
+
+A Chi-Square Test was conducted to determine whether there is a significant difference in click-through rates among the variants.
+
+# 5. Top 3 Insights from the Hypothesis Test
 
 **Hypothesis 01:**
 
-**True/False.**
+The "Connect" variant has a significantly different click-through rate compared to the "Interact" variant.
+
+**True**
 
 **Hypothesis 02:**
 
-**True/False.**
+The "Services" variant has a significantly different click-through rate compared to the "Interact" variant.
+
+**True**
 
 **Hypothesis 03:**
 
-**True/False.**
+The "Help" variant has a significantly different click-through rate compared to the "Interact" variant.
 
-# 5. Machine Learning Model Applied
+**True**
 
-# 6. Machine Learning Modelo Performance
+# 6. Business Results
 
-# 7. Business Results
+The results of the hypothesis test suggest that the "Connect", "Services", and "Help" variants have significantly different click-through rates compared to the "Interact" variant. This indicates that changing the category name can influence the click-through rate.
 
-# 8. Conclusions
+# 7. Conclusions
 
-# 9. Lessons Learned
+Based on the results of the hypothesis test, it is recommended to change the category name from "Interact" to "Connect", as it exhibited the lowest Type I error rate.
 
-# 10. Next Steps to Improve
+# 8. Lessons Learned
+
+The choice of a category name on a website can significantly influence click-through rates. The A/B/n test is a useful tool for validating design changes and optimizing user experience.
+
+# 9. Next Steps for Improvement
+
+Following the implementation of the "Connect" variant, it is recommended to monitor the click-through rate and conduct additional analyses to confirm the effectiveness of the change.
 
 # LICENSE
 
-# All Rights Reserved - Comunidade DS 2022
+# All Rights Reserved - DS Community 2022
